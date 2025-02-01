@@ -6,9 +6,9 @@ function checkForSpam(message) {
     message.toLowerCase().includes(bedWordSpam) ||
     message.toLowerCase().includes(bedWordSale)
   ) {
-    return "true";
+    return Boolean(1);
   } else {
-    return "false";
+    return Boolean(0);
   }
 }
 
